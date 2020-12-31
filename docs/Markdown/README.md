@@ -4,11 +4,35 @@ Markdown은 HTML로 변환이 가능한 텍스트 문서이기 때문에 HTML을
 
 ## Table of Contents ##
 
-`[toc]` : creates Table of Contents. 
-
-Automatically extracts headers from the file.  
+> #### for Typora
+>
+> `[toc]` : creates Table of Contents. 
+>
+> Automatically extracts headers from the file.  
 
 [toc]
+
+> DocToc
+>
+> `doctoc README.md --github.com` 을 해주면 
+>
+> `<!-- START doctoc-->` 과 `<!--END doctor-->` 사이에 
+>
+> Toc가 만들어진다. (`<--` 는 HTML 주석 )
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Basics](#basics)
+  - [Header](#header)
+  - [Blockquotes](#blockquotes)
+  - [List](#list)
+  - [Code](#code)
+  - [다양한 텍스트 조작](#%EB%8B%A4%EC%96%91%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%A1%B0%EC%9E%91)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 
 ## Basics
 
@@ -70,7 +94,7 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 |     Type      |               Usage               |               Result               |
 | :-----------: | :-------------------------------: | :--------------------------------: |
-|      URL      |        `<www.google.com>`         |          <www.google.com>          |
+|      URL      |         `www.google.com`          |      <https://www.google.com>      |
 |   Emphasis    |       `*single asterisks*`        |         *single asterisks*         |
 |    Strong     |      `**double asterisks**`       |        **double asterisks**        |
 | Strikethrough |        `~~Mistaken text~~`        |         ~~Mistaken text~~          |
