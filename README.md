@@ -23,10 +23,10 @@ https://jekyll-rtd-theme.rundocs.io
 ## Local debug
 
 ```sh
-make
-make server
+bundle exec jekyll serve
 ```
 
 ## The license
 
 The theme is available as open source under the terms of the MIT License
+
