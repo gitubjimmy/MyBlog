@@ -31,6 +31,11 @@ Markdown은 HTML로 변환이 가능한 텍스트 문서이기 때문에 HTML을
   - [List](#list)
   - [Code](#code)
   - [다양한 텍스트 조작](#%EB%8B%A4%EC%96%91%ED%95%9C-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%A1%B0%EC%9E%91)
+- [Advanced Functions](#advanced-functions)
+  - [Code Blocks](#code-blocks)
+  - [Math Blocks](#math-blocks)
+  - [Tables](#tables)
+  - [Links/Images](#linksimages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -117,9 +122,9 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 ### Code Blocks
 
-` ``` ` 로 코드를 감싸면 하나의 코드 블럭 안에 들어간다. 
+(``` ) 로 코드를 감싸면 하나의 코드 블럭 안에 들어간다. 
 
-` ``` ` 뒤에 어떤 언어인지를 붙여주면 그 언어의 syntax highlighting을 적용시킨다. 
+( ``` ) 뒤에 어떤 언어인지를 붙여주면 그 언어의 syntax highlighting을 적용시킨다. 
 
 > *<u>Examples</u>*
 >
@@ -162,7 +167,7 @@ enter를 누르면 list에서 빠져나올 수 있다.
 > $$
 >
 > ```latex
-> \alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi
+> \alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi
 > ```
 >
 > $$
@@ -264,7 +269,13 @@ enter를 누르면 list에서 빠져나올 수 있다.
 > $$
 >
 > ```latex
-> A_{m,n} =  \begin{pmatrix}  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\  \vdots  & \vdots  & \ddots & \vdots  \\  a_{m,1} & a_{m,2} & \cdots & a_{m,n}  \end{pmatrix}
+> A_{m,n} = 
+>  \begin{pmatrix}
+>   a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+>   a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+>   \vdots  & \vdots  & \ddots & \vdots  \\
+>   a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+>  \end{pmatrix}
 > ```
 >
 > $$
@@ -278,7 +289,11 @@ enter를 누르면 list에서 빠져나올 수 있다.
 > $$
 >
 > ```latex
-> M = \begin{bmatrix}       \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]       \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]       0           & \frac{5}{6} & \frac{1}{6}     \end{bmatrix}
+> M = \begin{bmatrix}
+>        \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
+>        \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
+>        0           & \frac{5}{6} & \frac{1}{6}
+>      \end{bmatrix}
 > ```
 >
 > $$
@@ -316,7 +331,11 @@ enter를 누르면 list에서 빠져나올 수 있다.
 > $$
 >
 > ```latex
-> f(n) =  \begin{cases}    n/2       & \quad \text{if } n \text{ is even}\\    -(n+1)/2  & \quad \text{if } n \text{ is odd}  \end{cases} 
+> f(n) =
+>   \begin{cases}
+>     n/2       & \quad \text{if } n \text{ is even}\\
+>     -(n+1)/2  & \quad \text{if } n \text{ is odd}
+>   \end{cases}
 > ```
 >
 > $$
@@ -358,7 +377,25 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 
 
+### Links/Images
 
+**internal link**: `[link name](#header name)`
+
+> *<u>Example</u>*
+>
+> `[example link](#Table of Contents)`
+>
+> [example link](#Table of Contents)
+
+**external link**: `[link name](site link)`
+
+>*<u>Example</u>*
+>
+>`[Google](https://www.google.com)`
+>
+>[Google](https://www.google.com)
+
+**images**: `![image name](path/url to image)` 
 
 
 
