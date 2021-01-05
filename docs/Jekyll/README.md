@@ -40,13 +40,18 @@ my_variable: footer_company_a.html
 ---
 ```
 
-```Liquid
-{% if page.my_variable %}
-  {% include {{ page.my_variable }} %}
+````
+{% raw %}{% if page.my_variable %}
+{% include {{ page.my_variable }} %}
 {% endif %}
+<title>{{ page.title }}</title>{% endraw %}
+````
 
-<title>{{ page.title }}</title>
-```
+>**cf.** Jekyll에서 위와 같이 liquid code를 code block 안에 넣고 싶다면
+>
+>코드 양 끝에 `{% raw %}{% raw %}{% endraw %}` 와 `{% raw %}{% endraw %}{% endraw %}` 를 붙여주면 된다. 
+
+
 
 마지막으로 **config.yml** 에서는 site의 전체적인 information, configuration등을 관리한다. 자세한 정보는 https://jekyllrb.com/docs/configuration/ 에서 확인할 수 있다. 
 

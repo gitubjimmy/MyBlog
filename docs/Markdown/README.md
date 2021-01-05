@@ -171,7 +171,7 @@ enter를 누르면 list에서 빠져나올 수 있다.
 > ```
 >
 > $$
-> \alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi
+> \alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi
 > $$
 >
 > ```latex
