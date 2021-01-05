@@ -49,9 +49,9 @@ my_variable: footer_company_a.html
 
 >**cf.** Jekyll에서 위와 같이 liquid code를 code block 안에 넣고 싶다면
 >
->코드 양 끝에 `{% raw %}{% raw %}{% endraw %}` 와 `{% raw %}{% endraw %}{% endraw %}` 를 붙여주면 된다. 
-
-
+>코드 양 끝에 **{% raw %}{% raw %}{% endraw %}** 와 **{% raw %}&#123;% endraw %&#125;{% endraw %}** 를 붙여주면 된다. 
+>
+> `{` 와 `}` 대신 `&#123;` 와 `&#125` 로 쓰는 방법도 있다. 
 
 마지막으로 **config.yml** 에서는 site의 전체적인 information, configuration등을 관리한다. 자세한 정보는 https://jekyllrb.com/docs/configuration/ 에서 확인할 수 있다. 
 
