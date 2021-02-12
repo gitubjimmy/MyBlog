@@ -399,7 +399,18 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 
 
+### hack for showing LaTeX
 
+https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b
+
+```html
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<img src="https://render.githubusercontent.com/render/math?math=">
+```
+
+`+` should be repaced to `%2B`
+
+**Tex equation generator:** http://atomurl.net/math/
 
 
 
