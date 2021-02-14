@@ -399,9 +399,7 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 
 
-### hack for showing LaTeX
-
-https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b
+### [hack for showing LaTeX](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b)
 
 ```html
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
@@ -410,9 +408,23 @@ https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b
 
 `+` should be repaced to `%2B`
 
-**Tex equation generator:** http://atomurl.net/math/
+**[Tex equation generator](http://atomurl.net/math/)**
 
+### [MathJax](http://zjuwhw.github.io/2017/06/04/MathJax.html)
 
+```HTML
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+```
+
+위 코드를 `_layouts/default.html` 에 넣어주면 inline math equation을 사용할 수 있다. 
 
 
 
