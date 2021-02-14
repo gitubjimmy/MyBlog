@@ -146,7 +146,9 @@ enter를 누르면 list에서 빠져나올 수 있다.
 
 ### Math Blocks
 
-`$$` 로 텍스트를 감싸면 *LaTex*를 인식하는 block을 만들어준다.  
+`$$` 로 텍스트를 감싸면 *LaTex*를 인식하는 block을 만들어준다.
+
+[Latex Symbls](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)  
 
 > *<u>Examples</u>*
 >
