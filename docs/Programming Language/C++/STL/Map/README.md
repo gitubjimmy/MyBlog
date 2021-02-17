@@ -1,6 +1,22 @@
 # std::map
 
-## Functions
+## Member functions
+
+### operator[]
+
+If key matches it returns value
+
+else it inserts new pair setting value to *rhs*
+
+*<u>Example:</u>*
+
+```c++
+std::map<char,std::string> mymap;
+
+mymap['a']="an element";
+mymap['b']="another element";
+mymap['c']=mymap['b'];
+```
 
 ### find
 
