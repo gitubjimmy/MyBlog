@@ -37,7 +37,30 @@ YAML 언어에서 사용되는 variable들의 종류와 각 variable들이 가�
 
 `{% raw %}{{ site.data.grants.2015.Return.ReturnHeader.ReturnTypeCd }}{% endraw %}` 가 가능하다. 
 
+### list
 
+**YAML**:
 
+```yaml
+bikes:
+  - title: mountain bikes
+  - title: road bikes
+  - title: hybrid bikes
+```
 
+**Markdown + Liquid:**
+
+```
+{% raw %}<ul>
+{% for item in site.data.samplelist.bikes %}
+<li>{{item.title}}</li>
+{% endfor %}
+</ul>{% endraw %}
+```
+
+**Result:**
+
+>- mountain bikes
+>- road bikes
+>- hybrid bikes
 
