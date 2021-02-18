@@ -57,3 +57,11 @@ my_variable: footer_company_a.html
 
 위와 같은 형태로 HTML과 Markdown파일을 적어주면 최종적으로 Jekyll에서 generate해준 site들은 **_site** 폴더에 들어가게 된다. 
 
+
+
+## Local debug
+
+```sh
+bundle exec jekyll serve
+```
+
