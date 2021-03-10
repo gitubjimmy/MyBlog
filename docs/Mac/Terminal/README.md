@@ -6,3 +6,5 @@ You can use Ctrl+W to delete just a word.
 
 You can also use Ctrl+C to cancel.
 
+Terminal restart: exec zsh -l
+
